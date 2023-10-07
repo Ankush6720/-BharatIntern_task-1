@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equive="X-UA-comptible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mahal Academy</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="Singin.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    </head>
+    <body>
+        <!-- Navbar items -->
+        <header class="header">
+            <a href="#"><img class="log" src="Mahal.png" alt="logo"></a>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">COURCES</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <!-- search bar right align -->
+                <li class="search">
+                    <form action="#">
+                        <input type="text"
+                           placeholder=" Search Courses"
+                           name="search">
+                        <button>
+                            <i class="fa fa-search"
+                               style="font-size: 18px;">
+                            </i>
+                        </button>
+                    </form>
+                </li>
+                <li class="s-icon"><a href="#"  title="Share"> 
+                    <i class="fa fa-share" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <!-- Sing in and Sing up -->
+                <li class="det">
+                    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sing In</button>
+                    <button>Sing Up</button>
+                </li>
+            </ul>
+        </header><br><br><br><br>
+        <!-- Content Part -->
+        <main>
+            <div id="id01" class="modal">
+                <form class="modal-content" action="/action_page.php" method="post">
+                  <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    <img src="img_avatar2.png" alt="Avatar" class="avatar">
+                  </div>
+              
+                  <div class="container">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+              
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                      
+                    <button type="submit">Login</button>
+                    <label>
+                      <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                  </div>
+              
+                  <div class="container" style="background-color:#f1f1f1">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                  </div>
+                </form>
+              </div>
+              
+              <script>
+              // Get the modal
+              var modal = document.getElementById('id01');
+              
+              // When the user clicks anywhere outside of the modal, close it
+              window.onclick = function(event) {
+                  if (event.target == modal) {
+                      modal.style.display = "none";
+                  }
+              }
+              </script>
+            <div class="intro">
+              <h1>Mahal Academy</h1>
+              <p>A Codeing Academy and Technical Course Provider.</p>
+              <a href="#"><button>Join</button></a>
+            </div>
+            <div class="about-me">
+                <div class="about-me-text">
+                  <h2>About Me</h2>
+                  <p>I am a web developer and I love to create websites. I am a very good developer and I am always looking for new projects. I am a very good developer and I am always looking for new projects.</p>
+                </div>
+                <img src="Girl.png" alt="girl">
+            </div>
+            <div class="achievements"><div class="work"><h2 class="">Video Courses</h2></div></div>
+            <div class="achievements">
+                <a href="#">
+                    <div class="work">
+                        <img src="web.jpg" alt="image">
+                        <p class="work-heading">Projects</p>
+                        <p class="work-text">I have worked on many projects and I am very proud of them. I am a very good developer and I am always looking for new projects.</p>
+                    </div>
+                </a> 
+                <a href="#">
+                    <div class="work">
+                        <img src="web.jpg" alt="image">
+                        <p class="work-heading">Skills</p>
+                        <p class="work-text">I have a lot of skills and I am very good at them. I am very good at programming and I am always looking for new skills.</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="work">
+                        <img src="web.jpg" alt="image">
+                        <p class="work-heading">Network</p>
+                        <p class="work-text">I have a lot of network skills and I am very good at them. I am very good at networking and I am always looking for new network skills.</p>
+                    </div>
+                </a> 
+            </div>
+            <div class="achievements">
+                <a href="#">                
+                    <div class="work">
+                        <img src="web.jpg" alt="image">
+                        <p class="work-heading">Projects</p>
+                        <p class="work-text">I have worked on many projects and I am very proud of them. I am a very good developer and I am always looking for new projects.</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="work">
+                        <img src="web.jpg" alt="image">
+                        <p class="work-heading">Skills</p>
+                        <p class="work-text">I have a lot of skills and I am very good at them. I am very good at programming and I am always looking for new skills.</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="work">
+                        <img src="web.jpg" alt="image">
+                        <p class="work-heading">Network</p>
+                        <p class="work-text">I have a lot of network skills and I am very good at them. I am very good at networking and I am always looking for new network skills.</p>
+                    </div>
+                </a>
+              </div>
+              <div class="achievements"><div class="work"><h2 class="">Tutorials</h2></div></div>
+              <div class="achievements">
+                  <a href="#">
+                      <div class="work">
+                          <img src="web.jpg" alt="image">
+                          <p class="work-heading">Projects</p>
+                          <p class="work-text">I have worked on many projects and I am very proud of them. I am a very good developer and I am always looking for new projects.</p>
+                      </div>
+                  </a> 
+                  <a href="#">
+                      <div class="work">
+                          <img src="web.jpg" alt="image">
+                          <p class="work-heading">Skills</p>
+                          <p class="work-text">I have a lot of skills and I am very good at them. I am very good at programming and I am always looking for new skills.</p>
+                      </div>
+                  </a>
+                  <a href="#">
+                      <div class="work">
+                          <img src="web.jpg" alt="image">
+                          <p class="work-heading">Network</p>
+                          <p class="work-text">I have a lot of network skills and I am very good at them. I am very good at networking and I am always looking for new network skills.</p>
+                      </div>
+                  </a> 
+              </div>
+              <div class="achievements">
+                  <a href="#">                
+                      <div class="work">
+                          <img src="web.jpg" alt="image">
+                          <p class="work-heading">Projects</p>
+                          <p class="work-text">I have worked on many projects and I am very proud of them. I am a very good developer and I am always looking for new projects.</p>
+                      </div>
+                  </a>
+                  <a href="#">
+                      <div class="work">
+                          <img src="web.jpg" alt="image">
+                          <p class="work-heading">Skills</p>
+                          <p class="work-text">I have a lot of skills and I am very good at them. I am very good at programming and I am always looking for new skills.</p>
+                      </div>
+                  </a>
+                  <a href="#">
+                      <div class="work">
+                          <img src="web.jpg" alt="image">
+                          <p class="work-heading">Network</p>
+                          <p class="work-text">I have a lot of network skills and I am very good at them. I am very good at networking and I am always looking for new network skills.</p>
+                      </div>
+                  </a>
+                </div>
+          </main>
+        <!-- Footer -->
+        <footer class="ftr">
+            <div class="abot"><br><img class="log" src="Mahal.png" alt="logo"></div>
+            <div class="abot">
+                <div><h3>Company</h3></div>
+                <div><a href="">Home</a></div>
+                <div><a href="">About</a></div>
+                <div><a href="">Contact</a></div>
+                <div><a href="">Privacy</a></div>
+                <div><a href="">Terms & Conditions</a></div>
+            </div>
+            <div class="abot">
+                <div><h3>Courses</h3></div>
+                <div><a href="">Videos</a></div>
+                <div><a href="">Tutorials</a></div>
+            </div>
+            <div class="abot">
+                <!-- Social Media Icon -->
+                <div class="social-icons">
+                    <h3>Social</h3>
+                    <a href="#"  title="facebook"> 
+                      <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" title="twitter"> 
+                      <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" title="instagram">  
+                      <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a><br>
+                    <a href="#" title="youtube">
+                      <i class="fa fa-youtube-square" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" title="linkedin">
+                      <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" title="pinterest">
+                      <i class="fa fa-github" aria-hidden="true"></i>
+                    </a>
+                </div>  
+            </div>
+        </footer>
+    </body>
+</html>
